@@ -1,0 +1,15 @@
+///$tab DSTimeline
+[DSTimeline]:
+LOAD * INLINE [
+  id, purchase_date, product_name, image
+  1, 2021-01-04T03:00:07.723Z, Ergonomic Plastic Computer, a.png
+  2, 2022-10-08T21:48:44.355Z, Ergonomic Plastic Chips, b.png
+  3, 2021-03-13T10:34:22.348Z, Awesome Plastic Chips, c.png
+  4, 2021-11-04T02:40:55.974Z, Refined Plastic Gloves, a.png
+  5, 2022-01-27T18:15:23.839Z, Unbranded Fresh Pizza, b.png
+  6, 2023-01-31T02:16:07.906Z, Tasty Wooden Chair, c.png
+  7, 2022-12-10T02:06:02.837Z, Refined Metal Chair, a.png
+  8, 2023-01-03T05:43:59.359Z, Practical Rubber Fish, b.png
+  9, 2020-11-06T22:40:12.530Z, Modern Concrete Table, c.png
+  10, 2022-06-03T07:49:05.262Z, Rustic Concrete Keyboard, a.png
+];

@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)https://devswiss.ch/ -->
+<html lang="en-US"
+	class="js no-svg yes-js js_active js js_active  vc_desktop  vc_transform  vc_transform skrollr skrollr-desktop">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<!-- Required meta tags -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="shortcut icon" href="https://devswiss.ch/index_files/favicon.ico">
+
+	<script>document.documentElement.className = document.documentElement.className + ' yes-js js_active js'</script>
+	<script>(function (html) { html.className = html.className.replace(/\bno-js\b/, 'js') })(document.documentElement);</script>
+	<title>devSwiss: Datenvisualisierung und Website-Entwicklung</title>
+	<meta name="robots" content="max-image-preview:large">
+	<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+	<link rel="dns-prefetch" href="https://s.w.org/">
+	<link rel="alternate" type="application/rss+xml" title="data-visualization » Feed" href="https://devswiss.ch/feed/">
+	<link rel="alternate" type="application/rss+xml" title="data-visualization » Comments Feed"
+		href="https://devswiss.ch/comments/feed/">
+	<script>
+		window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/wordpress.iqonic.design\/sofbox-wpbakery\/data-visualization\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.5" } };
+		!function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);
+	</script>
+	<script src="./index_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+	<style>
+		img.wp-smiley,
+		img.emoji {
+			display: inline !important;
+			border: none !important;
+			box-shadow: none !important;
+			height: 1em !important;
+			width: 1em !important;
+			margin: 0 .07em !important;
+			vertical-align: -0.1em !important;
+			background: none !important;
+			padding: 0 !important;
+		}
+
+		.clients-block {
+			height: 100px;
+			display: flex;
+			align-items: end;
+			justify-content: center;
+		}
+
+		.img-fluid-brand {
+			max-width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="./index_files/style.min.css" media="all">
+	<link rel="stylesheet" id="wc-block-vendors-style-css" href="./index_files/vendors-style.css" media="all">
+	<link rel="stylesheet" id="wc-block-style-css" href="./index_files/style.css" media="all">
+	<link rel="stylesheet" id="jquery-selectBox-css" href="./index_files/jquery.selectBox.css" media="all">
+	<link rel="stylesheet" id="yith-wcwl-font-awesome-css" href="./index_files/font-awesome.css" media="all">
+	<link rel="stylesheet" id="woocommerce_prettyPhoto_css-css" href="./index_files/prettyPhoto.css" media="all">
+	<link rel="stylesheet" id="yith-wcwl-main-css" href="./index_files/style(1).css" media="all">
+	<style id="yith-wcwl-main-inline-css">
+		.yith-wcwl-share li a {
+			color: #FFFFFF;
+		}
+
+		.yith-wcwl-share li a:hover {
+			color: #FFFFFF;
+		}
+
+		.yith-wcwl-share a.facebook {
+			background: #39599E;
+			background-color: #39599E;
+		}
+
+		.yith-wcwl-share a.facebook:hover {
+			background: #39599E;
+			background-color: #39599E;
+		}
+
+		.yith-wcwl-share a.twitter {
+			background: #45AFE2;
+			background-color: #45AFE2;
+		}
+
+		.yith-wcwl-share a.twitter:hover {
+			background: #39599E;
+			background-color: #39599E;
+		}
+
+		.yith-wcwl-share a.pinterest {
+			background: #AB2E31;
+			background-color: #AB2E31;
+		}
+
+		.yith-wcwl-share a.pinterest:hover {
+			background: #39599E;
+			background-color: #39599E;
+		}
+
+		.yith-wcwl-share a.email {
+			background: #FBB102;
+			background-color: #FBB102;
+		}
+
+		.yith-wcwl-share a.email:hover {
+			background: #39599E;
+			background-color: #39599E;
+		}
+
+		.yith-wcwl-share a.whatsapp {
+			background: #00A901;
+			background-color: #00A901;
+		}
+
+		.yith-wcwl-share a.whatsapp:hover {
+			background: #39599E;
+			background-color: #39599E;
+		}
+	</style>
+	<link rel="stylesheet" id="contact-form-7-css" href="./index_files/styles.css" media="all">
+	<link rel="stylesheet" id="sofbox-v4-shims-css" href="./index_files/v4-shims.css" media="all">
+	<link rel="stylesheet" id="sofbox-all-min-css" href="./index_files/all.min.css" media="all">
+	<link rel="stylesheet" id="woocommerce-layout-css" href="./index_files/woocommerce-layout.css" media="all">
+	<link rel="stylesheet" id="woocommerce-smallscreen-css" href="./index_files/woocommerce-smallscreen.css"
+		media="only screen and (max-width: 768px)">
+	<link rel="stylesheet" id="woocommerce-general-css" href="./index_files/woocommerce.css" media="all">
+	<style id="woocommerce-inline-inline-css">
+		.woocommerce form .form-row .required {
+			visibility: visible;
+		}
+	</style>
+	<link rel="stylesheet" id="megamenu-css" href="./index_files/style(2).css" media="all">
+	<link rel="stylesheet" id="dashicons-css" href="./index_files/dashicons.min.css" media="all">
+	<style id="dashicons-inline-css">
+		[data-font="Dashicons"]:before {
+			font-family: 'Dashicons' !important;
+			content: attr(data-icon) !important;
+			speak: none !important;
+			font-weight: normal !important;
+			font-variant: normal !important;
+			text-transform: none !important;
+			line-height: 1 !important;
+			font-style: normal !important;
+			-webkit-font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: grayscale !important;
+		}
+	</style>
+	<link rel="stylesheet" id="sofbox-fonts-css" href="./index_files/css" media="all">
+	<link rel="stylesheet" id="google-font-Poppins-css" href="./index_files/css(1)" media="all">
+	<link rel="stylesheet" id="all-css" href="./index_files/all.min(1).css" media="all">
+	<link rel="stylesheet" id="bootstrap-css" href="./index_files/bootstrap.min.css" media="all">
+	<link rel="stylesheet" id="ionicons-css" href="./index_files/ionicons.min.css" media="all">
+	<link rel="stylesheet" id="flaticon-css" href="./index_files/flaticon.css" media="all">
+	<link rel="stylesheet" id="magnific-popup-css" href="./index_files/magnific-popup.css" media="all">
+	<link rel="stylesheet" id="owl-carousel-css" href="./index_files/owl.carousel.min.css" media="all">
+	<link rel="stylesheet" id="swiper-css" href="./index_files/swiper.css" media="all">
+	<link rel="stylesheet" id="wow-css" href="./index_files/wow.css" media="all">
+	<link rel="stylesheet" id="slick-theme-css" href="./index_files/slick-theme.css" media="all">
+	<link rel="stylesheet" id="slick-css" href="./index_files/slick.css" media="all">
+	<link rel="stylesheet" id="sofbox-style-css" href="./index_files/sofbox-style.css" media="all">
+	<style id="sofbox-style-inline-css">
+		.iq-breadcrumb-one h2 {
+			color: #1e1e1e !important;
+		}
+
+		.iq-bg-over {
+			background: #eff1fe !important;
+		}
+
+		.iq-breadcrumb-one ol li a,
+		.iq-breadcrumb-one .breadcrumb-item.active,
+		.iq-breadcrumb-one .breadcrumb-item+.breadcrumb-item::before {
+			color: #a37cfc !important;
+		}
+
+		header.menu-sticky .main-header {
+			background: !important;
+		}
+
+		.iq-over-dark-90::before {
+			background: rgba(0, 123, 255, 1) !important;
+		}
+
+		footer .footer-top .footer-title,
+		footer .testimonail-widget-menu .owl-carousel .owl-item .testimonial-info .testimonial-name h5,
+		footer .testimonail-widget-menu .owl-carousel .owl-item .testimonial-info .testimonial-name .sub-title,
+		footer .footer-top .text-white {
+			color: #ffffff !important;
+		}
+
+		footer .widget ul li a,
+		footer.footer-one .info-share li a,
+		footer.footer-one ul.iq-contact li i,
+		footer .testimonail-widget-menu .owl-carousel .owl-item .testimonial-info p,
+		footer.footer-three .info-share li a {
+			color: #ffffff !important;
+		}
+
+		footer.footer-one .widget ul li a:hover,
+		footer .widget ul.menu li a:hover,
+		footer.footer-one .info-share li a:hover,
+		footer .wp-video .mejs-overlay-button:before,
+		footer.footer-three .info-share li a:hover {
+			color: #8cb4ff !important;
+		}
+
+		footer .wp-video:before {
+			background: rgba(140, 180, 255, 0.6);
+		}
+
+		header.style-one {
+			position: absolute !important;
+			background: transparent;
+		}
+
+		header.style-one .sub-header {
+			background:
+				transparent;
+		}
+
+		.admin-bar header.style-one {
+			top: 30px;
+		}
+
+		@media(max-width:992px) {
+			header.style-one {
+				position: absolute !important;
+				background: transparent !important;
+			}
+
+		}
+
+		header li .search-box .search-submit i,
+		header ul.shop_list li.cart-btn .cart_count a i {
+			color: #000000 !important;
+		}
+
+		header .navbar ul li a,
+		header .navbar ul li .sub-menu li a,
+		header .navbar ul li.current-menu-ancestor .sub-menu li a,
+		header .navbar ul li i,
+		header .navbar ul li:hover .sub-menu li i,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-item a.mega-menu-link,
+		header #mega-menu-top li .mega-sub-menu li a,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link {
+			color: #000000 !important;
+		}
+
+		header .navbar ul li .sub-menu li:hover,
+		header .navbar ul li a:hover,
+		header .navbar ul li.current-menu-item a,
+		header .navbar ul li.current-menu-parent a,
+		header .navbar ul li.current-menu-parent i,
+		header .navbar ul li.current-menu-item i,
+		header .navbar ul li:hover .mega-sub-menu li a:hover,
+		header .navbar ul li:hover i,
+		header .navbar ul li.current-menu-ancestor a,
+		header .navbar ul li.current-menu-ancestor i,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-toggle-on>a.mega-menu-link {
+			color: #007bff !important;
+		}
+
+		header .navbar ul li.current-menu-parent .sub-menu li a {
+			color: #000000 !important;
+		}
+
+		header .navbar ul li .sub-menu li a:hover,
+		header .navbar ul li .sub-menu li.current-menu-item a,
+		header .navbar ul li .sub-menu li:hover>a,
+		header .navbar ul li .sub-menu li .sub-menu li.menu-item:hover a,
+		header .navbar ul li .sub-menu li.current-menu-parent a,
+		header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li.current-menu-item a,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover,
+		header #mega-menu-top li .mega-sub-menu li:hover>a.mega-menu-link,
+		header #mega-menu-top li .mega-sub-menu li.mega-current-menu-ancestor a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item:hover>a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:hover,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:focus,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link:focus,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:hover,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-menu-item a.mega-menu-link:focus,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-item a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-ancestor a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-ancestor ul.mega-sub-menu li.mega-current-menu-item a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-ancestor ul.mega-sub-menu li:hover a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li:hover a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li:hover ul.mega-sub-menu li:hover a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-current-menu-item a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top li.mega-menu-item>ul.mega-sub-menu li.mega-current-menu-item a.mega-menu-link {
+			background: #007bff !important;
+			color: #ffffff !important;
+		}
+
+		header .navbar ul li .sub-menu li .sub-menu li.menu-item a,
+		header .navbar ul li .sub-menu li.current-menu-parent .sub-menu li a,
+		header #mega-menu-wrap-top #mega-menu-top>li ul.mega-sub-menu li.mega-current-menu-ancestor ul.mega-sub-menu li.mega-current-menu-item a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li.mega-current-menu-ancestor ul.mega-sub-menu li a.mega-menu-link,
+		header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-flyout ul.mega-sub-menu li:hover ul.mega-sub-menu li a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link,
+		#mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-menu-item>a.mega-menu-link {
+
+			background: #ffffff !important;
+			color: #000000 !important;
+		}
+
+		header .navbar ul li .sub-menu li:hover>i,
+		header .navbar ul li .sub-menu li.current-menu-ancestor i {
+			color: #ffffff !important;
+		}
+
+		@media (max-width: 992px) {
+
+			header .navbar-light .navbar-toggler:hover,
+			header #mega-menu-wrap-top .mega-menu-toggle .mega-toggle-block-1:after {
+				background: #007bff !important;
+				border-color: #007bff !important;
+			}
+		}
+
+		@media (max-width: 992px) {
+			header .navbar-light .navbar-toggler {
+				background: #007bff !important;
+				border-color: #007bff !important;
+			}
+
+			header .navbar ul li.current-menu-parent>a,
+			header .navbar ul li.current-menu-item a,
+			header .navbar ul li a:hover,
+			header .navbar ul li .sub-menu li:hover,
+			header .navbar ul li a:hover,
+			header .navbar ul li.current-menu-item a,
+			header .navbar ul li.current-menu-parent a,
+			header .navbar ul li.current-menu-parent i,
+			header .navbar ul li.current-menu-item i,
+			header .navbar ul li:hover .mega-sub-menu li a:hover,
+			header .navbar ul li:hover i,
+			header .navbar ul li.current-menu-ancestor a,
+			header .navbar ul li.current-menu-ancestor i,
+			#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+			#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+			#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link,
+			#mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-toggle-on>a.mega-menu-link,
+			header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-megamenu>ul.mega-sub-menu li.mega-menu-column>ul.mega-sub-menu>li.mega-current-menu-item a.mega-menu-link,
+			header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-item>a.mega-menu-link,
+			header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-menu-ancestor>a.mega-menu-link,
+			header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-current-page-ancestor>a.mega-menu-link,
+			header #mega-menu-wrap-top #mega-menu-top>li.mega-menu-item.mega-toggle-on>a.mega-menu-link,
+			header #mega-menu-top li .mega-sub-menu li.mega-current-menu-ancestor .mega-sub-menu li a {
+				background: #007bff !important;
+				color: #ffffff !important;
+			}
+		}
+
+
+		header .navbar .sub-main ul.shop_list li .cart_count #mini-cart-count::before {
+			background-color: rgba(55, 125, 255, 1) !important;
+		}
+
+		header .blue-btn.button {
+			background: #4bd9ec !important;
+		}
+
+		header .blue-btn.button:hover {
+			background: #000000 !important;
+		}
+
+		header .blue-btn.button a {
+			color: #ffffff !important;
+		}
+
+		header .blue-btn.button a:hover {
+			color: #ffffff !important;
+		}
+
+		:root {
+			--primary-color: #4bd9ec !important;
+			--secondary-color: #1e1e1e !important;
+			--text-color: #8e989f !important;
+			--white-color: #ffffff !important;
+		}
+	</style>
+	<link rel="stylesheet" id="sofbox-responsive-css" href="./index_files/responsive.css" media="all">
+	<link rel="stylesheet" id="woocommerce-style-css" href="./index_files/woocommerce(1).css" media="all">
+	<link rel="stylesheet" id="js_composer_front-css" href="./index_files/js_composer.min.css" media="all">
+	<script src="./index_files/jquery.min.js" id="jquery-core-js"></script>
+	<script src="./index_files/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+	<script src="./index_files/jquery.blockUI.min.js" id="jquery-blockui-js"></script>
+	<script id="wc-add-to-cart-js-extra">
+		/* <![CDATA[ */
+		var wc_add_to_cart_params = { "ajax_url": "\/sofbox-wpbakery\/data-visualization\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/sofbox-wpbakery\/data-visualization\/?wc-ajax=%%endpoint%%", "i18n_view_cart": "View cart", "cart_url": "https:\/\/wordpress.iqonic.design\/sofbox-wpbakery\/data-visualization\/cart\/", "is_cart": "", "cart_redirect_after_add": "no" };
+		/* ]]> */
+	</script>
+	<script src="./index_files/add-to-cart.min.js" id="wc-add-to-cart-js"></script>
+	<script src="./index_files/woocommerce-add-to-cart.js" id="vc_woocommerce-add-to-cart-js-js"></script>
+	<link rel="https://api.w.org/" href="https://devswiss.ch/wp-json/">
+	<link rel="alternate" type="application/json" href="https://devswiss.ch/wp-json/wp/v2/pages/2982">
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://devswiss.ch/xmlrpc.php?rsd">
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://devswiss.ch/index_files/wlwmanifest.xml">
+	<meta name="generator" content="WordPress 5.7.5">
+	<meta name="generator" content="WooCommerce 5.4.2">
+	<link rel="canonical" href="https://devswiss.ch/">
+	<link rel="shortlink" href="https://devswiss.ch/">
+	<link rel="alternate" type="application/json+oembed"
+		href="https://devswiss.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.iqonic.design%2Fsofbox-wpbakery%2Fdata-visualization%2F">
+	<link rel="alternate" type="text/xml+oembed"
+		href="https://devswiss.ch/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwordpress.iqonic.design%2Fsofbox-wpbakery%2Fdata-visualization%2F&amp;format=xml">
+	<meta name="framework" content="Redux 4.1.27">
+	<style id="xamin-dynamic-css75855">
+		.iq-breadcrumb-one {
+			background: #eff1fe !important;
+		}
+	</style> <noscript>
+		<style>
+			.woocommerce-product-gallery {
+				opacity: 1 !important;
+			}
+		</style>
+	</noscript>
+	<style>
+		.recentcomments a {
+			display: inline !important;
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+	</style>
+	<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
+	<meta name="generator"
+		content="Powered by Slider Revolution 6.5.2 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+	<script>function setREVStartSize(e) {
+			//window.requestAnimationFrame(function() {
+			window.RSIW = window.RSIW === undefined ? window.innerWidth : window.RSIW;
+			window.RSIH = window.RSIH === undefined ? window.innerHeight : window.RSIH;
+			try {
+				var pw = document.getElementById(e.c).parentNode.offsetWidth,
+					newh;
+				pw = pw === 0 || isNaN(pw) ? window.RSIW : pw;
+				e.tabw = e.tabw === undefined ? 0 : parseInt(e.tabw);
+				e.thumbw = e.thumbw === undefined ? 0 : parseInt(e.thumbw);
+				e.tabh = e.tabh === undefined ? 0 : parseInt(e.tabh);
+				e.thumbh = e.thumbh === undefined ? 0 : parseInt(e.thumbh);
+				e.tabhide = e.tabhide === undefined ? 0 : parseInt(e.tabhide);
+				e.thumbhide = e.thumbhide === undefined ? 0 : parseInt(e.thumbhide);
+				e.mh = e.mh === undefined || e.mh == "" || e.mh === "auto" ? 0 : parseInt(e.mh, 0);
+				if (e.layout === "fullscreen" || e.l === "fullscreen")
+					newh = Math.max(e.mh, window.RSIH);
+				else {
+					e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+					for (var i in e.rl) if (e.gw[i] === undefined || e.gw[i] === 0) e.gw[i] = e.gw[i - 1];
+					e.gh = e.el === undefined || e.el === "" || (Array.isArray(e.el) && e.el.length == 0) ? e.gh : e.el;
+					e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+					for (var i in e.rl) if (e.gh[i] === undefined || e.gh[i] === 0) e.gh[i] = e.gh[i - 1];
+
+					var nl = new Array(e.rl.length),
+						ix = 0,
+						sl;
+					e.tabw = e.tabhide >= pw ? 0 : e.tabw;
+					e.thumbw = e.thumbhide >= pw ? 0 : e.thumbw;
+					e.tabh = e.tabhide >= pw ? 0 : e.tabh;
+					e.thumbh = e.thumbhide >= pw ? 0 : e.thumbh;
+					for (var i in e.rl) nl[i] = e.rl[i] < window.RSIW ? 0 : e.rl[i];
+					sl = nl[0];
+					for (var i in nl) if (sl > nl[i] && nl[i] > 0) { sl = nl[i]; ix = i; }
+					var m = pw > (e.gw[ix] + e.tabw + e.thumbw) ? 1 : (pw - (e.tabw + e.thumbw)) / (e.gw[ix]);
+					newh = (e.gh[ix] * m) + (e.tabh + e.thumbh);
+				}
+				if (window.rs_init_css === undefined) window.rs_init_css = document.head.appendChild(document.createElement("style"));
+				document.getElementById(e.c).height = newh + "px";
+				window.rs_init_css.innerHTML += "#" + e.c + "_wrapper { height: " + newh + "px }";
+			} catch (e) {
+				console.log("Failure at Presize of Slider:" + e)
+			}
+			//});
+		};</script>
+	<style data-type="vc_shortcodes-custom-css">
+		.vc_custom_1575716335581 {
+			padding-bottom: 0px !important;
+		}
+
+		.vc_custom_1575717018106 {
+			padding-top: 50px !important;
+			padding-bottom: 0px !important;
+		}
+
+		.vc_custom_1574071387075 {
+			padding-bottom: 0px !important;
+		}
+
+		.vc_custom_1578562515581 {
+			padding-top: 70px !important;
+			padding-bottom: 0px !important;
+		}
+
+		.vc_custom_1578562330540 {
+			padding-top: 0px !important;
+			padding-bottom: 60px !important;
+		}
+
+		.vc_custom_1578562266855 {
+			padding-top: 0px !important;
+			padding-bottom: 100px !important;
+		}
+
+		.vc_custom_1578559946339 {
+			padding-top: 0px !important;
+		}
+
+		.vc_custom_1578559974749 {
+			padding-top: 0px !important;
+			padding-bottom: 70px !important;
+		}
+	</style><noscript>
+		<style>
+			.wpb_animate_when_almost_visible {
+				opacity: 1;
+			}
+		</style>
+	</noscript>
+	<style>
+		/** Mega Menu CSS: fs **/
+	</style>
+	<style>
+		#rev_slider_16_1_wrapper {
+			height: 900px
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-offset="80"
+	class="home page-template-default page page-id-2982 theme-sofbox woocommerce-js mega-menu-top sofbox-front-page has-header-image page-two-column colors-light wpb-js-composer js-comp-ver-6.6.0 vc_responsive">
+	<!-- loading -->
+	<div id="loading" style="display: none;">
+		<div id="loading-center">
+			<img src="./index_files/loader-2.gif" alt="loader">
+
+		</div>
+	</div>
+	<!-- loading End -->
+	<div id="page" class="site">
+		<a class="skip-link screen-reader-text" href="https://devswiss.ch/#content"></a>
+		<!-- <header class="style-one" id="main-header">
+			<div class="container-fluid main-header">
+				<div class="row">
+					<div class="col-sm-12">
+						<nav class="navbar navbar-expand-lg navbar-light">
+							<a class="navbar-brand" href="https://devswiss.ch/">
+								<img class="img-fluid logo" src="./index_files/data-visulization-logo.png" alt="sofbox">
+								<img class="img-fluid sticky-logo" src="./index_files/data-visulization-logo.png" alt="sofbox">
+							</a>
+							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+								<span class="navbar-toggler-icon"><i class="ion-navicon"></i></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<div id="mega-menu-wrap-top" class="mega-menu-wrap">
+									<div class="mega-menu-toggle">
+										<div class="mega-toggle-blocks-left"></div>
+										<div class="mega-toggle-blocks-center"></div>
+										<div class="mega-toggle-blocks-right">
+											<div class="mega-toggle-block mega-menu-toggle-animated-block mega-toggle-block-0"
+												id="mega-toggle-block-0"><button aria-label="Toggle Menu"
+													class="mega-toggle-animated mega-toggle-animated-slider" type="button" aria-expanded="false">
+													<span class="mega-toggle-animated-box">
+														<span class="mega-toggle-animated-inner"></span>
+													</span>
+												</button></div>
+										</div>
+									</div>
+									<ul id="mega-menu-top" class="mega-menu max-mega-menu mega-menu-horizontal" data-event="hover_intent"
+										data-effect="fade_up" data-effect-speed="200" data-effect-mobile="slide"
+										data-effect-speed-mobile="200" data-mobile-force-width="false" data-second-click="go"
+										data-document-click="collapse" data-vertical-behaviour="standard" data-breakpoint="768"
+										data-unbind="true" data-mobile-state="collapse_all" data-hover-intent-timeout="300"
+										data-hover-intent-interval="100">
+										<li
+											class="mega-menu-item mega-menu-item-type-post_type mega-menu-item-object-page mega-menu-item-home mega-current-menu-item mega-page_item mega-page-item-2982 mega-current_page_item mega-current-menu-ancestor mega-current-menu-parent mega-current_page_parent mega-current_page_ancestor mega-menu-item-has-children mega-menu-megamenu mega-align-bottom-left mega-menu-megamenu mega-menu-item-3244"
+											id="mega-menu-item-3244"><a class="mega-menu-link"
+												href="https://devswiss.ch/" aria-haspopup="true"
+												aria-expanded="false" tabindex="0">Home<span class="mega-indicator"
+													data-has-click-event="true"></span></a>
+											<ul class="mega-sub-menu">
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3245"
+													id="mega-menu-item-3245"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/">Home One</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3246"
+													id="mega-menu-item-3246"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-2/">Home Two</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3247"
+													id="mega-menu-item-3247"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-3/">Home Three</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3248"
+													id="mega-menu-item-3248"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-4/">Home Four</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-3249"
+													id="mega-menu-item-3249"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-5/">Home Five</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3250"
+													id="mega-menu-item-3250"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-6/">Home Six</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3251"
+													id="mega-menu-item-3251"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-7/">Home Seven</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3252"
+													id="mega-menu-item-3252"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-8/">Home Eight</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-3253"
+													id="mega-menu-item-3253"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-9/">Home Nine</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3254"
+													id="mega-menu-item-3254"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/lead-management/">Lead Management</a>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3255"
+													id="mega-menu-item-3255"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/marketing-software/">Marketing
+														Software</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3256"
+													id="mega-menu-item-3256"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/marketing-agency/">Marketing
+														Agency</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-3257"
+													id="mega-menu-item-3257"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/startup/">Startup</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3258"
+													id="mega-menu-item-3258"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/startup/product-store/">Product
+														Store</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3259"
+													id="mega-menu-item-3259"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/hr-management/">HR Management</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3260"
+													id="mega-menu-item-3260"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/chatbot/">Chatbot</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-current-menu-item mega-current_page_item mega-menu-item-home mega-menu-columns-1-of-4 mega-menu-clear mega-menu-item-3261"
+													id="mega-menu-item-3261"><a class="mega-menu-link"
+														href="https://devswiss.ch/">Data
+														Visualization</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3262"
+													id="mega-menu-item-3262"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/data-analysis/">Data Analysis</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3263"
+													id="mega-menu-item-3263"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/sofbox-2/home-19/">AR/VR</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-columns-1-of-4 mega-menu-item-3264"
+													id="mega-menu-item-3264"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/job-portal/">Job Portal</a></li>
+											</ul>
+										</li>
+										<li
+											class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-3265"
+											id="mega-menu-item-3265"><a class="mega-menu-link"
+												href="https://devswiss.ch/#" aria-haspopup="true"
+												aria-expanded="false" tabindex="0">Pages<span class="mega-indicator"
+													data-has-click-event="true"></span></a>
+											<ul class="mega-sub-menu">
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3266"
+													id="mega-menu-item-3266"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">About Us<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3267"
+															id="mega-menu-item-3267"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/about-us-1/">About 1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3268"
+															id="mega-menu-item-3268"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/about-us-2/">About 2</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3269"
+													id="mega-menu-item-3269"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Service<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3270"
+															id="mega-menu-item-3270"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/services-1/">Service 1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3271"
+															id="mega-menu-item-3271"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/services-2/">Service 2</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3273"
+													id="mega-menu-item-3273"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Pricing Plan<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3274"
+															id="mega-menu-item-3274"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/pricing-plan-1/">Pricing Plan
+																1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3275"
+															id="mega-menu-item-3275"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/pricing-plans-2/">Pricing Plan
+																2</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3276"
+													id="mega-menu-item-3276"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Careers<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3277"
+															id="mega-menu-item-3277"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/careers-1/">Careers 1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3278"
+															id="mega-menu-item-3278"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/careers-2/">Careers 2</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3279"
+													id="mega-menu-item-3279"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/faq/">FAQ</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3280"
+													id="mega-menu-item-3280"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/team/">Team</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3281"
+													id="mega-menu-item-3281"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/contact-us-1/" aria-haspopup="true"
+														aria-expanded="false">Contact Us<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3282"
+															id="mega-menu-item-3282"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/contact-us-1/">Contact Us 1</a>
+														</li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3283"
+															id="mega-menu-item-3283"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/contact-us-2/">Contact Us 2</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li
+											class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-3284"
+											id="mega-menu-item-3284"><a class="mega-menu-link"
+												href="https://devswiss.ch/#" aria-haspopup="true"
+												aria-expanded="false" tabindex="0">Portfolio<span class="mega-indicator"
+													data-has-click-event="true"></span></a>
+											<ul class="mega-sub-menu">
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3285"
+													id="mega-menu-item-3285"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/portfolio-2-columns/">Portfolio 2
+														Columns</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3286"
+													id="mega-menu-item-3286"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/portfolio-3-columns/">Portfolio 3
+														Columns</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3287"
+													id="mega-menu-item-3287"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/portfolio-4-columns/">Portfolio 4
+														Columns</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3288"
+													id="mega-menu-item-3288"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/portfolio-5-columns/">Portfolio 5
+														Columns</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3289"
+													id="mega-menu-item-3289"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/portfolio-no-space/">Portfolio No
+														Space</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3290"
+													id="mega-menu-item-3290"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/blog/portfolio/stans-office-gateway/">Portfolio
+														Details</a></li>
+											</ul>
+										</li>
+										<li
+											class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-3291"
+											id="mega-menu-item-3291"><a class="mega-menu-link"
+												href="https://devswiss.ch/#" aria-haspopup="true"
+												aria-expanded="false" tabindex="0">Blog<span class="mega-indicator"
+													data-has-click-event="true"></span></a>
+											<ul class="mega-sub-menu">
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3292"
+													id="mega-menu-item-3292"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/blog/">Blog</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3293"
+													id="mega-menu-item-3293"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/blog/2019/11/28/construction-industry/">Blog
+														Details</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3294"
+													id="mega-menu-item-3294"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Blog grid<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3295"
+															id="mega-menu-item-3295"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/one-column-blog/">One column
+																blog</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3296"
+															id="mega-menu-item-3296"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/two-column-blog/">Two column
+																blog</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3297"
+															id="mega-menu-item-3297"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/three-column-blog/">Three column
+																blog</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3298"
+													id="mega-menu-item-3298"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Left Sidebar grid<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3299"
+															id="mega-menu-item-3299"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/left-sidebar-grid-1/">Left sidebar
+																grid 1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3300"
+															id="mega-menu-item-3300"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/left-sidebar-grid-2/">Left sidebar
+																grid 2</a></li>
+													</ul>
+												</li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-menu-item-3301"
+													id="mega-menu-item-3301"><a class="mega-menu-link"
+														href="https://devswiss.ch/#"
+														aria-haspopup="true" aria-expanded="false">Right Sidebar grid<span class="mega-indicator"
+															data-has-click-event="true"></span></a>
+													<ul class="mega-sub-menu">
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3302"
+															id="mega-menu-item-3302"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/right-sidebar-grid-1/">Right
+																Sidebar Grid 1</a></li>
+														<li
+															class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3303"
+															id="mega-menu-item-3303"><a class="mega-menu-link"
+																href="https://wordpress.iqonic.design/sofbox-wpbakery/right-sidebar-grid-2/">Right
+																Sidebar Grid 2</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+										<li
+											class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-has-children mega-align-bottom-left mega-menu-flyout mega-menu-item-3304"
+											id="mega-menu-item-3304"><a class="mega-menu-link"
+												href="https://devswiss.ch/#" aria-haspopup="true"
+												aria-expanded="false" tabindex="0">Shop<span class="mega-indicator"
+													data-has-click-event="true"></span></a>
+											<ul class="mega-sub-menu">
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3305"
+													id="mega-menu-item-3305"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/shop/">Shop</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3306"
+													id="mega-menu-item-3306"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/product/flying-ninja/">Shop
+														Details</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3307"
+													id="mega-menu-item-3307"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/cart/">Cart</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3308"
+													id="mega-menu-item-3308"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/checkout/">Checkout</a></li>
+												<li
+													class="mega-menu-item mega-menu-item-type-custom mega-menu-item-object-custom mega-menu-item-3309"
+													id="mega-menu-item-3309"><a class="mega-menu-link"
+														href="https://wordpress.iqonic.design/sofbox-wpbakery/wishlist/">Wishlist</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sub-main">
+								<ul class="shop_list">
+									<li class="search-btn">
+										<div class="search-box">
+											<form method="get" class="search-form"
+												action="https://devswiss.ch/">
+												<label for="search-form-61fbfcf3133fe">
+													<span class="screen-reader-text">Search for:</span>
+												</label>
+												<input type="search" id="search-form-61fbfcf3133fe" class="search-field" placeholder="Search"
+													value="" name="s">
+												<button type="submit" class="search-submit"><i class="fa fa-search"></i><span
+														class="screen-reader-text">Search</span></button>
+											</form>
+										</div>
+									</li>
+									<li class="cart-btn">
+										<div class="cart_count">
+											<a class="parents mini-cart-count"
+												href="https://devswiss.ch/cart/">
+												<i class="fa fa-shopping-cart"></i>
+												<div id="mini-cart-count">
+													0 </div>
+
+											</a>
+										</div>
+									</li>
+
+									<li class="button-btn">
+										<nav aria-label="breadcrumb">
+											<div class="blue-btn button"><a
+													href="https://devswiss.ch/#">Get Started</a>
+											</div>
+										</nav>
+									</li>
+
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</header> -->
+		<div class="site-content-contain">
+			<div id="content" class="site-content"
+				style="background-image: url(./index_files/fr2-1.png); background-repeat: no-repeat; background-position: center top;">
+				<div id="primary" class="content-area">
+					<main id="main" class="site-main">
+						<article id="post-2982" class="sofbox-panel post-2982 page type-page status-publish hentry">
+							<div class="panel-content">
+								<div class="container">
+									<div class="sf-content">
+										<div class="vc_row wpb_row vc_row-fluid vc_custom_1575716335581">
+											<div class="wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div style="display: flex; flex-direction: column; gap: 10px;">
+															<h1
+																style="z-index: 9; font-family: Lato; color: #010F4C; text-decoration: none; white-space: nowrap; text-align: left; line-height: 99px; letter-spacing: 0px; font-weight: 700; font-size: 72px;">
+																<img src="./index_files/logo.png" style="height: 100px; width: auto; margin-top: -20px;" />
+																devSwiss
+															</h1>
+															<div
+																style="font-family: Poppins;color: rgb(49, 62, 91); text-decoration: none; text-align: left; line-height: 23px; letter-spacing: 0px; font-weight: 400; font-size: 14px; display: block; word-wrap: break-word;">
+																Wir bieten Dienstleistungen wie Datenanalyse und Datenvisualisierung mit Qlik Sense,
+																PowerBI und benutzerdefinierten JavaScript-Apps an.<br />
+																Kundenspezifische Web-App-Entwicklung, mobile Apps, Wordpress- und E-Commerce-Sites.
+																Automatisierung, AWS, Salesforce, Veeva und SFMC Consulting.
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vc_row wpb_row vc_row-fluid">
+											<div class="wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div
+															style="display: flex; flex-direction: row; gap: 10px; align-items: center; justify-items: center;">
+															<img src="./index_files/er-1.png" class="tp-rs-img rs-lazyload" width="254" height="455"
+																data-lazyload="//devswiss.ch/index_files/er-1.png" data-no-retina=""
+																data-reference="//devswiss.ch/index_files/er-1.png"
+																data-src-rs-ref="//devswiss.ch/index_files/er-1.png"
+																style="position: relative; height: 100%; width: 100%;" />
+															<img src="./index_files/df2.png" class="tp-rs-img rs-lazyload" width="996" height="665"
+																data-lazyload="//devswiss.ch/index_files/df2.png" data-no-retina=""
+																data-reference="//devswiss.ch/index_files/df2.png"
+																data-src-rs-ref="//devswiss.ch/index_files/df2.png"
+																style="position: relative; height: 100%; width: 100%;" />
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vc_row wpb_row vc_row-fluid vc_custom_1575717018106">
+											<div class="wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div class="vc_row wpb_row vc_inner vc_row-fluid">
+															<div
+																class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-3 vc_col-md-6">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="title-box wow fadeInUp  text-center"
+																			style="visibility: visible; animation-name: fadeInUp;">
+																			<h2>Beratungs- und Entwicklungsdienstleistungen</h2><span class="title-design">Wir
+																				bieten Beratung und Entwicklung für ein breites Spektrum an Softwareentwicklung
+																				und Datenanalyse.</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="vc_row wpb_row vc_inner vc_row-fluid">
+															<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="feature-box-effect box-effect-two  wow fadeInUp text-left "
+																			style="visibility: hidden; animation-name: none;">
+																			<div class="icon-box">
+																				<div class="img-effect mb-4"><img src="./index_files/q3.png" alt="fancybox">
+																				</div>
+																				<h5 class="mb-2">Berichte und Datenanalyse</h5>
+																				<p class="mb-0">Wunderschöne Berichte und Komponenten eignen sich perfekt zur
+																					Erstellung Ihrer eigenen Berichte, daneben bieten wir Beratung zur
+																					Datenanalyse.
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="feature-box-effect box-effect-two  wow fadeInUp text-left "
+																			style="visibility: hidden; animation-name: none;">
+																			<div class="icon-box">
+																				<div class="img-effect mb-4"><img src="./index_files/q1.png" alt="fancybox">
+																				</div>
+																				<h5 class="mb-2">Daten-Engineering</h5>
+																				<p class="mb-0">Entwurf von Datenbanken und APIs, Erstellung von ETL-Prozessen.
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="feature-box-effect box-effect-two  wow fadeInUp text-left "
+																			style="visibility: hidden; animation-name: none;">
+																			<div class="icon-box">
+																				<div class="img-effect mb-4"><img src="./index_files/q2.png" alt="fancybox">
+																				</div>
+																				<h5 class="mb-2">Webseiten- und App-Entwicklung</h5>
+																				<p class="mb-0">Wir entwickeln alles von QlikSense über benutzerdefinierte
+																					Anwendungen bis hin zu WordPress- und eCommerce-Sites.
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-3">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="feature-box-effect box-effect-two  wow fadeInUp text-left "
+																			style="visibility: hidden; animation-name: none;">
+																			<div class="icon-box">
+																				<div class="img-effect mb-4"><img src="./index_files/q4.png" alt="fancybox">
+																				</div>
+																				<h5 class="mb-2">Sicherheit und Verlässlichkeit</h5>
+																				<p class="mb-0">Sicherheit und Zuverlässigkeit stehen für uns an erster Stelle.
+																					Unsere Kundenliste beweist das.
+																				</p>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vc_row wpb_row vc_row-fluid vc_custom_1574071387075">
+											<div class="wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div class="vc_row wpb_row vc_inner vc_row-fluid">
+															<div class="wpb_column vc_column_container vc_col-sm-12">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="title-box wow fadeInUp  text-center "
+																			style="visibility: hidden; animation-name: none;">
+																			<h2>Visualisierung von Datenanalysen</h2><span class="title-design">Wir können auf
+																				verschiedenen Plattformen wie Qlik Sense oder benutzerdefinierten JavaScript-
+																				oder mobilen Plattformen arbeiten.</span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="row custom-tab verticaltab3 flex-row-reverse  ">
+															<div class="col-lg-6 col-md-12 ">
+
+																<ul class="nav nav-pills nav-pills-style-3 mb-5" id="pills-tab" role="tablist"
+																	aria-orientation="vertical">
+																	<li class="nav-item">
+																		<a class="nav-link active show" data-toggle="pill"
+																			href="https://devswiss.ch/#tab-unique-design" role="tab" aria-selected="true">
+																			<div class="media">
+																				<div class="media-body">
+																					<h4 class="mb-2 active-title">Einzigartiges Design</h4>
+																					<p class="mb-0">Wir können einzigartig aussehende Berichte und Diagramme
+																						bereitstellen, die am besten zum Verbraucher der Daten passen.</p>
+																				</div>
+																			</div>
+																		</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link " data-toggle="pill"
+																			href="https://devswiss.ch/#tab-multipurpose-layout" role="tab"
+																			aria-selected="false">
+																			<div class="media">
+																				<div class="media-body">
+																					<h4 class="mb-2 active-title">Mehrzweck-Layout</h4>
+																					<p class="mb-0">Unsere Diagramme und Komponenten können für verschiedene
+																						Berichte wiederverwendet werden, auch über verschiedene Technologien und
+																						Plattformen hinweg.</p>
+																				</div>
+																			</div>
+																		</a>
+																	</li>
+																	<li class="nav-item">
+																		<a class="nav-link " data-toggle="pill"
+																			href="https://devswiss.ch/#tab-easy-to-customize" role="tab"
+																			aria-selected="false">
+																			<div class="media">
+																				<div class="media-body">
+																					<h4 class="mb-2 active-title">Leicht anpassbar</h4>
+																					<p class="mb-0">Unsere Produkte können von den technischen und
+																						nichttechnischen Mitarbeitern unserer Kunden leicht angepasst werden.</p>
+																				</div>
+																			</div>
+																		</a>
+																	</li>
+																</ul>
+															</div>
+															<div class="col-lg-6 col-md-12  show_content">
+																<div id="tab-unique-design" class="tab-pane fade active show">
+																	<div
+																		class="wpb_single_image wpb_content_element vc_align_left  wpb_animate_when_almost_visible wpb_zoomIn zoomIn">
+
+																		<figure class="wpb_wrapper vc_figure">
+																			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="979"
+																					height="663" src="./index_files/rg.png"
+																					class="vc_single_image-img attachment-full" alt="" loading="lazy"
+																					srcset="https://devswiss.ch/index_files/rg.png 979w, https://devswiss.ch/index_files/rg-300x203.png 300w, https://devswiss.ch/index_files/rg-768x520.png 768w, https://devswiss.ch/index_files/rg-600x406.png 600w"
+																					sizes="100vw"></div>
+																		</figure>
+																	</div>
+
+																</div>
+																<div id="tab-multipurpose-layout" class="tab-pane fade">
+																	<div
+																		class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_zoomIn zoomIn wpb_start_animation animated">
+
+																		<figure class="wpb_wrapper vc_figure">
+																			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="996"
+																					height="665" src="./index_files/df2.png"
+																					class="vc_single_image-img attachment-full" alt="" loading="lazy"
+																					srcset="https://devswiss.ch/index_files/df2.png 996w, https://devswiss.ch/index_files/df2-300x200.png 300w, https://devswiss.ch/index_files/df2-768x513.png 768w, https://devswiss.ch/index_files/df2-600x401.png 600w"
+																					sizes="100vw"></div>
+																		</figure>
+																	</div>
+
+																</div>
+																<div id="tab-easy-to-customize" class="tab-pane fade">
+																	<div
+																		class="wpb_single_image wpb_content_element vc_align_left wpb_animate_when_almost_visible wpb_zoomIn zoomIn wpb_start_animation animated">
+
+																		<figure class="wpb_wrapper vc_figure">
+																			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="979"
+																					height="663" src="./index_files/rg.png"
+																					class="vc_single_image-img attachment-full" alt="" loading="lazy"
+																					srcset="https://devswiss.ch/index_files/rg.png 979w, https://devswiss.ch/index_files/rg-300x203.png 300w, https://devswiss.ch/index_files/rg-768x520.png 768w, https://devswiss.ch/index_files/rg-600x406.png 600w"
+																					sizes="100vw"></div>
+																		</figure>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vc_row wpb_row vc_row-fluid test-shadow vc_custom_1578562515581">
+											<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div class="title-box wow fadeInUp mb-5 text-left "
+															style="visibility: hidden; animation-name: none;">
+															<h2>Vorteile der Nutzung unserer Dienstleistungen</h2><span class="title-design">Wir haben
+																Branchenkenntnisse, indem wir direkt mit den Kunden an ihren Finanzen und Verkäufen
+																arbeiten und sie mit technischen Lösungen unterstützen.</span>
+														</div>
+														<div class="vc_row wpb_row vc_inner vc_row-fluid">
+															<div class="wpb_column vc_column_container vc_col-sm-6">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+
+																		<div class="text-left  ">
+																			<ul class="iq-list wow fadeInUp"
+																				style="visibility: hidden; animation-name: none;">
+																				<li><i class="fa fa-check"></i><span>Beratung und praxisnahe Entwicklung</span>
+																				</li>
+																				<li><i class="fa fa-check"></i><span>Flexible Arbeitsvereinbarungen</span></li>
+																				<li><i class="fa fa-check"></i><span>Vollständig remote oder vor Ort in der
+																						Schweiz und der EU</span></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+															<div class="wpb_column vc_column_container vc_col-sm-6">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+
+																		<div class="text-left  ">
+																			<ul class="iq-list wow fadeInUp"
+																				style="visibility: hidden; animation-name: none;">
+																				<li><i class="fa fa-check"></i><span>Fachwissen im Bereich
+																						Finanzen/Verkauf</span></li>
+																				<li><i class="fa fa-check"></i><span>Visuelle Perfektion und kreativer
+																						Touch</span></li>
+																				<li><i class="fa fa-check"></i><span>Fertige Produktlösungen</span></li>
+																			</ul>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div
+												class="full-img-right mt-5 mt-lg-0 wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div class="wpb_single_image wpb_content_element vc_align_left">
+
+															<figure class="wpb_wrapper vc_figure">
+																<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="907" height="623"
+																		src="./index_files/g1.png" class="vc_single_image-img attachment-full" alt=""
+																		loading="lazy"
+																		srcset="https://devswiss.ch/index_files/g1.png 907w, https://devswiss.ch/index_files/g1-300x206.png 300w, https://devswiss.ch/index_files/g1-768x528.png 768w, https://devswiss.ch/index_files/g1-600x412.png 600w"
+																		sizes="100vw"></div>
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="vc_row wpb_row vc_row-fluid vc_custom_1578559946339">
+											<div class="wpb_column vc_column_container vc_col-sm-12">
+												<div class="vc_column-inner">
+													<div class="wpb_wrapper">
+														<div class="vc_row wpb_row vc_inner vc_row-fluid">
+															<div
+																class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-3 vc_col-lg-6 vc_col-md-offset-3 vc_col-md-6">
+																<div class="vc_column-inner">
+																	<div class="wpb_wrapper">
+																		<div class="title-box wow fadeInUp  text-center "
+																			style="visibility: hidden; animation-name: none;">
+																			<h2>Unsere Kunden</h2><span class="title-design">Wir betreuen sowohl
+																				Grossunternehmen als auch Dutzende von KMU's in Zusammenarbeit mit unserem
+																				Treuhandunternehmen <a href="https://taxswiss.com">taxSwiss.com</a></span>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="container">
+															<div class="row fancy-clients ">
+																<div class="col-md-4 col-sm-12 ">
+																	<a class="clients-block wow fadeIn" data-wow-delay="0.6s"
+																		href="https://www.migrolino.ch"
+																		style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+																		<img class="img-fluid-brand" src="./640px-Mlino_logo_4c_co.jpg" alt="migrolino">
+																	</a>
+																</div>
+																<div class="col-md-4 col-sm-12 ">
+																	<a class="clients-block wow fadeIn" data-wow-delay="0.6s"
+																		href="https://www.socarenergy.ch/de-ch/"
+																		style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+																		<img class="img-fluid-brand" src="./Socar_logo-700x229.png" alt="socar">
+																	</a>
+																</div>
+																<div class="col-md-4 col-sm-12 ">
+																	<a class="clients-block wow fadeIn" data-wow-delay="0.6s"
+																		href="https://www.msd.ch/de/"
+																		style="visibility: hidden; animation-delay: 0.6s; animation-name: none;">
+																		<img class="img-fluid-brand" src="./msd-logo.png" alt="msd">
+																	</a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- .sf-content -->
+
+									</div><!-- .container -->
+								</div><!-- .panel-content -->
+
+						</article><!-- #post-## -->
+
+
+					</main><!-- #main -->
+				</div><!-- #primary -->
+			</div><!-- #content -->
+			<!-- Footer start-->
+			<footer id="contact" class="footer-one iq-bg-dark footer-shap iq-over-dark-90  ">
+				<div class="container">
+					<!-- Address -->
+					<div class="footer-top">
+						<div class="container">
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="widget text-left">
+										<div class="row">
+											<div class="col-md-10 col-sm-12">
+												<ul class="iq-contact">
+													<li>
+														<a href="tel:+41767784052"><i class="fa fa-phone"></i><span
+																class="pr-3">+41767784052</span></a>
+													</li>
+													<li>
+														<a href="mailto:info@devswiss.ch"><i class="fa fa-at"></i><span
+																class="pr-3">info@devswiss.ch</span></a>
+													</li>
+												</ul>
+												<div class="text-white">
+													devSwiss & taxSwiss Sinku
+												</div>
+												<div class="text-white">
+													Kühlewilstrasse 6
+												</div>
+												<div class="text-white">
+													3086 Englisberg
+												</div>
+											</div>
+											<div class="col-md-2 col-sm-12">
+												<ul class="iq-contact">
+													<li>
+														<a href="/"><img draggable="false" role="img" class="emoji" alt="🇬🇧"
+																src="https://s.w.org/images/core/emoji/13.0.1/svg/1f1ec-1f1e7.svg">English</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer stop-->
+
+		</div><!-- .site-content-contain -->
+	</div><!-- #page -->
+	<!-- === back-to-top === -->
+	<div id="back-to-top" style="display: none;">
+		<a class="top" id="top" href="https://devswiss.ch/#top"> <i class="fa fa-arrow-up"></i> </a>
+	</div>
+	<!-- === back-to-top End === -->
+	<script>
+		jQuery(document).ready(function ($) {
+
+		});</script>
+
+	<script>
+		window.RS_MODULES = window.RS_MODULES || {};
+		window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+		window.RS_MODULES.defered = false;
+		window.RS_MODULES.waiting = ["main", "parallax", "video", "slideanims", "actions", "layeranimation", "navigation", "carousel", "panzoom"];
+		window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+		window.RS_MODULES.type = 'compiled';
+	</script>
+	<script>(function () {
+			function maybePrefixUrlField() {
+				if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+					this.value = "http://" + this.value;
+				}
+			}
+
+			var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+			if (urlFields) {
+				for (var j = 0; j < urlFields.length; j++) {
+					urlFields[j].addEventListener('blur', maybePrefixUrlField);
+				}
+			}
+		})();</script>
+	<link rel="preload" as="font" id="rs-icon-set-revicon-woff"
+		href="https://devswiss.ch/index_files/revicons.woff?5510888" type="font/woff" crossorigin="anonymous" media="all">
+	<link rel="preload" as="font" id="rs-icon-set-fa-icon-woff" type="font/woff2" crossorigin="anonymous"
+		href="https://devswiss.ch/index_files/fontawesome-webfont.woff2" media="all">
+	<link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="./index_files/font-awesome(1).css"
+		media="all">
+	<link href="./index_files/css(2)" rel="stylesheet" property="stylesheet" media="all">
+
+	<script>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<script>
+		if (typeof revslider_showDoubleJqueryError === "undefined") { function revslider_showDoubleJqueryError(sliderID) { console.log("You have some jquery.js library include that comes after the Slider Revolution files js inclusion."); console.log("To fix this, you can:"); console.log("1. Set 'Module General Options' -> 'Advanced' -> 'jQuery & OutPut Filters' -> 'Put JS to Body' to on"); console.log("2. Find the double jQuery.js inclusion and remove it"); return "Double Included jQuery Library"; } }
+	</script>
+	<link rel="stylesheet" id="font-awesome-css" href="./index_files/font-awesome.min.css" media="all">
+	<style id="font-awesome-inline-css">
+		[data-font="FontAwesome"]:before {
+			font-family: 'FontAwesome' !important;
+			content: attr(data-icon) !important;
+			speak: none !important;
+			font-weight: normal !important;
+			font-variant: normal !important;
+			text-transform: none !important;
+			line-height: 1 !important;
+			font-style: normal !important;
+			-webkit-font-smoothing: antialiased !important;
+			-moz-osx-font-smoothing: grayscale !important;
+		}
+	</style>
+	<link rel="stylesheet" id="vc_openiconic-css" href="./index_files/vc_openiconic.min.css" media="all">
+	<link rel="stylesheet" id="vc_typicons-css" href="./index_files/typicons.min.css" media="all">
+	<link rel="stylesheet" id="vc_entypo-css" href="./index_files/vc_entypo.min.css" media="all">
+	<link rel="stylesheet" id="vc_linecons-css" href="./index_files/vc_linecons_icons.min.css" media="all">
+	<link rel="stylesheet" id="vc_animate-css-css" href="./index_files/animate.min.css" media="all">
+	<link rel="stylesheet" id="rs-plugin-settings-css" href="./index_files/rs6.css" media="all">
+	<style id="rs-plugin-settings-inline-css">
+		#rs-demo-id {}
+	</style>
+	<script src="./index_files/jquery.selectBox.min.js" id="jquery-selectBox-js"></script>
+	<script src="./index_files/jquery.prettyPhoto.min.js" id="prettyPhoto-js"></script>
+	<script id="jquery-yith-wcwl-js-extra">
+		/* <![CDATA[ */
+		var yith_wcwl_l10n = { "ajax_url": "\/sofbox-wpbakery\/data-visualization\/wp-admin\/admin-ajax.php", "redirect_to_cart": "no", "multi_wishlist": "", "hide_add_button": "1", "enable_ajax_loading": "", "ajax_loader_url": "https:\/\/devswiss.ch\/index_files\/ajax-loader-alt.svg", "remove_from_wishlist_after_add_to_cart": "1", "is_wishlist_responsive": "1", "time_to_close_prettyphoto": "3000", "fragments_index_glue": ".", "reload_on_found_variation": "1", "mobile_media_query": "768", "labels": { "cookie_disabled": "We are sorry, but this feature is available only if cookies on your browser are enabled.", "added_to_cart_message": "<div class=\"woocommerce-notices-wrapper\"><div class=\"woocommerce-message\" role=\"alert\">Product added to cart successfully<\/div><\/div>" }, "actions": { "add_to_wishlist_action": "add_to_wishlist", "remove_from_wishlist_action": "remove_from_wishlist", "reload_wishlist_and_adding_elem_action": "reload_wishlist_and_adding_elem", "load_mobile_action": "load_mobile", "delete_item_action": "delete_item", "save_title_action": "save_title", "save_privacy_action": "save_privacy", "load_fragments": "load_fragments" } };
+		/* ]]> */
+	</script>
+	<script src="./index_files/jquery.yith-wcwl.min.js" id="jquery-yith-wcwl-js"></script>
+	<script src="./index_files/wp-polyfill.min.js" id="wp-polyfill-js"></script>
+	<script id="wp-polyfill-js-after">
+		('fetch' in window) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>'); (document.contains) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>'); (window.DOMRect) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>'); (window.URL && window.URL.prototype && window.URLSearchParams) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>'); (window.FormData && window.FormData.prototype.keys) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>'); (Element.prototype.matches && Element.prototype.closest) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>'); ('objectFit' in document.documentElement.style) || document.write('<script src="https://devswiss.ch/index_files/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>');
+	</script>
+	<script id="contact-form-7-js-extra">
+		/* <![CDATA[ */
+		var wpcf7 = { "api": { "root": "https:\/\/wordpress.iqonic.design\/sofbox-wpbakery\/data-visualization\/wp-json\/", "namespace": "contact-form-7\/v1" } };
+		/* ]]> */
+	</script>
+	<script src="./index_files/index.js" id="contact-form-7-js"></script>
+	<script src="./index_files/rbtools.min.js" id="tp-tools-js"></script>
+	<script src="./index_files/rs6.min.js" id="revmin-js"></script>
+	<script src="./index_files/js.cookie.min.js" id="js-cookie-js"></script>
+	<script id="woocommerce-js-extra">
+		/* <![CDATA[ */
+		var woocommerce_params = { "ajax_url": "\/sofbox-wpbakery\/data-visualization\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/sofbox-wpbakery\/data-visualization\/?wc-ajax=%%endpoint%%" };
+		/* ]]> */
+	</script>
+	<script src="./index_files/woocommerce.min.js" id="woocommerce-js"></script>
+	<script id="wc-cart-fragments-js-extra">
+		/* <![CDATA[ */
+		var wc_cart_fragments_params = { "ajax_url": "\/sofbox-wpbakery\/data-visualization\/wp-admin\/admin-ajax.php", "wc_ajax_url": "\/sofbox-wpbakery\/data-visualization\/?wc-ajax=%%endpoint%%", "cart_hash_key": "wc_cart_hash_646e98ebbcf94784d3624fad399ee034", "fragment_name": "wc_fragments_646e98ebbcf94784d3624fad399ee034", "request_timeout": "5000" };
+		/* ]]> */
+	</script>
+	<script src="./index_files/cart-fragments.min.js" id="wc-cart-fragments-js"></script>
+	<script src="./index_files/bootstrap.min.js" id="bootstrap-js"></script>
+	<script src="./index_files/countdown.js" id="countdown-js"></script>
+	<script src="./index_files/appear.js" id="appear-js"></script>
+	<script src="./index_files/jquery.countTo.js" id="jquery-count-js"></script>
+	<script src="./index_files/jquery.scrollme.min.js" id="jquery-scrollme-js"></script>
+	<script src="./index_files/jquery.magnific-popup.min.js" id="jquery-magnific-js"></script>
+	<script src="./index_files/skrollr.js" id="skrollr-js"></script>
+	<script src="./index_files/circle-progress.min.js" id="circle-progress-js"></script>
+	<script src="./index_files/isotope.pkgd.min.js" id="isotope-js"></script>
+	<script src="./index_files/owl.carousel.min.js" id="owl-carousel-js"></script>
+	<script src="./index_files/popper.min.js" id="popper-js"></script>
+	<script src="./index_files/swiper.min.js" id="swiper-js"></script>
+	<script src="./index_files/slick.min.js" id="slick-js"></script>
+	<script src="./index_files/wow.min.js" id="wow-js"></script>
+	<script src="./index_files/parallax.min.js" id="parallax-js"></script>
+	<script src="./index_files/semantic-ui-range.js" id="semantic-ui-range-js"></script>
+	<script src="./index_files/wishlist.js" id="wishlist-js"></script>
+	<script src="./index_files/sticky.js" id="sticky-js"></script>
+	<script src="./index_files/sofbox-custom.js" id="sofbox-custom-js"></script>
+	<script src="./index_files/hoverIntent.min.js" id="hoverIntent-js"></script>
+	<script id="megamenu-js-extra">
+		/* <![CDATA[ */
+		var megamenu = { "timeout": "300", "interval": "100" };
+		/* ]]> */
+	</script>
+	<script src="./index_files/maxmegamenu.js" id="megamenu-js"></script>
+	<script src="./index_files/wp-embed.min.js" id="wp-embed-js"></script>
+	<script src="./index_files/js_composer_front.min.js" id="wpb_composer_front_js-js"></script>
+	<script src="./index_files/vc-waypoints.min.js" id="vc_waypoints-js"></script>
+	<script defer="" src="./index_files/forms.js" id="mc4wp-forms-api-js"></script>
+	<!-- <script>
+		var tpj = jQuery;
+
+		var revapi16;
+
+		if (window.RS_MODULES === undefined) window.RS_MODULES = {};
+		if (RS_MODULES.modules === undefined) RS_MODULES.modules = {};
+		RS_MODULES.modules["revslider161"] = {
+			init: function () {
+				revapi16 = jQuery("#rev_slider_16_1");
+				if (revapi16 == undefined || revapi16.revolution == undefined) { revslider_showDoubleJqueryError("rev_slider_16_1"); return; }
+				revapi16.revolutionInit({
+					sliderType: "hero",
+					DPR: "dpr",
+					sliderLayout: "fullwidth",
+					visibilityLevels: "1240,1024,778,480",
+					gridwidth: 1600,
+					gridheight: 1000,
+					lazyType: "smart",
+					spinner: "spinner0",
+					perspective: 600,
+					perspectiveType: "local",
+					editorheight: "1000,768,960,720",
+					responsiveLevels: "1240,1024,778,480",
+					progressBar: { disableProgressBar: true },
+					navigation: {
+						onHoverStop: false
+					},
+					viewPort: {
+						global: true,
+						globalDist: "-200px",
+						enable: false
+					},
+					fallbacks: {
+						allowHTML5AutoPlayOnAndroid: true
+					},
+				});
+
+			}
+		} // End of RevInitScript
+
+		if (window.RS_MODULES.checkMinimal !== undefined) { window.RS_MODULES.checkMinimal(); };
+	</script> -->
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-HMMWYJE43W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+		gtag('config', 'G-HMMWYJE43W');
+	</script>
+</body>
+
+</html>

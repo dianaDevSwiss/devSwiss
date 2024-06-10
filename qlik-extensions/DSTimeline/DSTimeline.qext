@@ -1,0 +1,24 @@
+{
+  "name": "DSTimeline",
+  "description": "Advanced timeline component for qlik-sense",
+  "icon": "extension",
+  "type": "visualization",
+  "preview": "DSTimeline.png",
+  "email": "info@devswiss.ch",
+  "version": "2.7.0",
+  "bundle": {
+    "id": "devswiss-bundle",
+    "name": "devSwiss",
+    "description": "advanced devSwiss components for qlik-sense"
+  },
+  "author": "devSwiss.ch",
+  "homepage": "devswiss.ch",
+  "keywords": "qlik-sense, visualization",
+  "license": "2023 © devSwiss.ch - All rights reserved.",
+  "tc": "http://www.devswiss.ch/toc",
+  "repository": "",
+  "dependencies": {
+    "qlik-sense": ">=2.2.4"
+  },
+  "src": "/extensions/DSTimeline/DSTimeline.png"
+}

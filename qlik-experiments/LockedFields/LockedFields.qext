@@ -1,0 +1,24 @@
+{
+	"name": " devSwiss LockedFields",
+	"description": "LockedFields component for qlik-sense",
+	"icon": "text",
+	"type": "visualization",
+	"preview": "LockedFields.png",
+	"email": "support@devswiss.ch",
+	"version": "1.0.0",
+	"bundle": {
+		"id": "devswiss-bundle",
+		"name": "devSwiss",
+		"description": "simple devSwiss components for qlik-sense"
+    },
+	"author": "devSwiss GmbH.",
+	"homepage": "devswiss.ch",
+	"keywords": "qlik-sense, visualization",
+	"license": "2022 © devSwiss GmbH. - All rights reserved.",
+	"tc": "http://www.devswiss.ch/toc",
+	"repository": "",
+	"dependencies": {
+		"qlik-sense": ">=2.2.4"
+	},
+	"src": "/extensions/LockedFields/LockedFields.png"
+}
